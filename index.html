@@ -15,7 +15,58 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+
+    <picture>
+
+      <source srcset="images/museum_SQ_800.jpg,
+                          images/museum_SQ_1600.jpg 2x,
+                          images/museum_SQ_2400.jpg 3x"
+              media="(min-width: 1600px)" />
+
+      <source srcset="images/museum_SQ_640.jpg,
+                          images/museum_SQ_1280.jpg 2x,
+                          images/museum_SQ_1920.jpg 3x"
+              media="(min-width: 1280px)" />
+
+      <source srcset="images/museum_SQ_480.jpg,
+                          images/museum_SQ_960.jpg 2x,
+                          images/museum_SQ_1440.jpg 3x"
+              media="(min-width: 960px)" />
+      
+  
+      <source srcset="images/museum_LS_720.jpg,
+                          
+                          images/museum_LS_1440.jpg 2x,
+                          images/museum_LS_2160.jpg 3x"
+              media="(min-width: 720px)" />
+
+      <source srcset="images/museum_LS_480.jpg,
+                          
+                          images/museum_LS_960.jpg 2x,
+                          images/museum_LS_1440.jpg 3x"
+              media="(min-width: 480px)" />
+
+      <source srcset="images/museum_LS_320.jpg,
+                          
+                          images/museum_LS_640.jpg 2x,
+                          images/museum_LS_960.jpg 3x"
+              media="(min-width: 320px)" />
+
+      <source srcset="images/museum_LS_960.jpg,
+                          
+                          images/museum_LS_1920.jpg 2x,
+                          images/museum_LS_2880.jpg 3x"
+              media="(max-width: 959px)" />
+      
+      <img src="images/museum.jpg" alt="placeholder">
+  
+      
+  </picture>
+    
+  
+      
+    
+    
 
   </header>
 </body>
